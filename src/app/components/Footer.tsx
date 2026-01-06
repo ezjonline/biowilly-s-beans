@@ -6,11 +6,11 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <h2>BIO WILLY'S BEANS</h2>
+            <h2>BIOWILLY'S BEANS</h2>
             <p>Seattle, WA</p>
           </div>
           <div className="footer-meta">
-            <p>&copy; {new Date().getFullYear()} Bio Willy's Beans. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Biowilly's Beans. All rights reserved.</p>
           </div>
         </div>
       </div>

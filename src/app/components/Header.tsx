@@ -9,12 +9,12 @@ export function Header() {
         <div className="logo-wrapper">
           <Image
             src="/logo.png"
-            alt="Bio Willy's Beans Logo"
+            alt="Biowilly's Beans Logo"
             width={60}
             height={60}
             className="logo-img"
           />
-          <h1 className="logo-text">BIO WILLY'S BEANS</h1>
+          <h1 className="logo-text">BIOWILLY'S BEANS</h1>
         </div>
         <nav>
           <ul>

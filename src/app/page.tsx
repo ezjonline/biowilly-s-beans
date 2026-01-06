@@ -37,16 +37,22 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="story-content">
-              <h2 className="section-title">Bio Willy's story</h2>
+              <h2 className="section-title">Biowilly's story</h2>
               <div className="story-text">
                 <p>
-                  Born from Bill Levin’s love of coffee and the Seattle rain, Bio Willy’s Beans began as a family-run nano-roaster tucked away in Bio Willy's basement. With a handful of beans at a time, Bill and his relatives perfect each roast, letting the coffee’s origin shine while keeping the operation intimate and personal.
+                  Born out of Bill Levin’s love of coffee and the Seattle coffee culture, Biowilly's Beans began as a nano-roaster, and expanded to provide artisan coffee to local businesses, family and friends.
                 </p>
                 <p>
-                  Guided by a commitment to the planet, the roaster runs on solar power and delivers in a fleet of biodiesel-converted vans, ensuring every cup is as clean as it is delicious. Local cafés and boutique shops already carry the private-label beans, and the brand’s Instagram and Facebook pages echo the mantra “Sustainable. Eco-friendly. Damn tasty.”
+                  Bill perfects each small batch roast, bringing out the coffee’s origin flavors and aromas.
+                </p>
+                <p>
+                  Guided by a commitment to sustainability, the roasterie is partially run on solar power. The brand’s Instagram and Facebook pages echo Biowilly's mantra: “Sustainable. Eco-friendly. Damn tasty.”
                 </p>
               </div>
-              <a href="mailto:biowilly@gmail.com" className="button story-button">Place an Order</a>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '1rem', marginTop: '1.5rem' }}>
+                <a href="https://www.youtube.com/watch?v=LTrWlYWoaL0" target="_blank" rel="noopener noreferrer" className="video-link">Watch How It's Made</a>
+                <a href="mailto:biowilly@gmail.com" className="button story-button" style={{ marginTop: 0 }}>Place an Order</a>
+              </div>
             </div>
           </div>
         </div>
@@ -62,16 +68,12 @@ export default function LandingPage() {
 
           <div className="offerings-grid">
             <OfferingItem
-              title="Posto Nove"
+              title="Golden Decaf"
               imageSrc="/roast-posto-nove.jpg"
             />
             <OfferingItem
               title="Wedding Blend"
               imageSrc="/roast-wedding-blend.png"
-            />
-            <OfferingItem
-              title="Flor Deipe"
-              imageSrc="/roast-flor-de-ipe.jpg"
             />
           </div>
           <div className="text-center" style={{ marginTop: '4rem' }}>
@@ -232,10 +234,19 @@ export default function LandingPage() {
           margin-bottom: 2rem;
           letter-spacing: -0.01em;
         }
-        .story-text p {
           margin-bottom: 1.5rem;
           font-size: 1.125rem;
           color: var(--text-secondary);
+        }
+        .video-link {
+          font-size: 0.9rem;
+          text-decoration: underline;
+          color: var(--text-primary);
+          font-style: italic;
+          transition: var(--transition-smooth);
+        }
+        .video-link:hover {
+          color: var(--accent-color);
         }
         .story-button {
           background-color: #fff;
@@ -271,8 +282,10 @@ export default function LandingPage() {
         }
         .offerings-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 3rem;
+          max-width: 900px;
+          margin: 0 auto;
         }
         .text-center { text-align: center; }
 
