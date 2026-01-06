@@ -50,7 +50,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '1rem', marginTop: '1.5rem' }}>
-                <a href="https://www.youtube.com/watch?v=LTrWlYWoaL0" target="_blank" rel="noopener noreferrer" className="video-link">Watch How It's Made</a>
+                <a href="https://www.youtube.com/watch?v=LTrWlYWoaL0" target="_blank" rel="noopener noreferrer" className="video-link">Click here to watch our how it's made video</a>
                 <a href="mailto:biowilly@gmail.com" className="button story-button" style={{ marginTop: 0 }}>Place an Order</a>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function LandingPage() {
           <div className="offerings-grid">
             <OfferingItem
               title="Golden Decaf"
-              imageSrc="/roast-posto-nove.jpg"
+              imageSrc="/roast-golden-decaf.png"
             />
             <OfferingItem
               title="Wedding Blend"
